@@ -1,0 +1,58 @@
+body {
+    border: 0;
+    margin: 5;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url(mostrinhos.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    color: white;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+}
+
+.quadradinho {
+    height: 35px;
+    width: 35px;
+    border: black solid 2px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verde {
+    border: green solid;
+    color: green;
+}
+
+.vermelho {
+    border: transparent;
+    background-color: transparent;
+}
+
+.transparente {
+    border-color: transparent;
+    background-color: transparent;
+    font-weight: bold;
+    justify-content: end;
+}
+
+.b {
+    justify-content: center;
+    align-items: end;
+}
