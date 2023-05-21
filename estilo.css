@@ -22,27 +22,28 @@ body {
 
 .linha {
     display: flex;
+    margin-top: 8px;
 }
 
 .quadradinho {
     height: 35px;
-    width: 35px;
-    border: black solid 2px;
+    width: 40px;
+    border: none;
     background-color: white;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 4px;
 }
 
 .verde {
-    border: green solid;
-    color: green;
+    border-color: rgb(13, 255, 13) solid;
+    background-color: rgb(139, 255, 139);
 }
 
 .vermelho {
-    border: transparent;
-    background-color: transparent;
+    border-color: rgb(255, 0, 0) solid;
+    background-color: rgb(255, 120, 120);
 }
 
 .transparente {
@@ -55,4 +56,11 @@ body {
 .b {
     justify-content: center;
     align-items: end;
+}
+
+.inputLetra {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border: black solid 2px;
 }
