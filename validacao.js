@@ -1,133 +1,349 @@
+var listaCruzadinha = ["cpu", "ula", "registradores", "ram", "rom", "eprom", "flash", "memoriademassa", "dma", "cs", "addressbus", "databus", "i5", "i7", "dualcore", "quadcore", "threads", "cache"]
+var cpuWord = ""
+var ulaWord = ""
+var registradoresWord = ""
+var ramWord = ""
+var romWord = ""
+var epromWord = ""
+var flashWord = ""
+var memoriaDeMassaWord = ""
+var dmaWord = ""
+var csWord = ""
+var addressBusWord = ""
+var i5Word = ""
+var i7Word = ""
+var dualcoreWord = ""
+var quadcoreWord = ""
+var threadscoreWord = ""
+var cacheWord = ""
 
-// Palavra 1 - CPU
-var cpu = ["c", "p", "u"];
+var teste =
 
-// Palavra 2 - ULA
-var ula = [
-    "u", "l", "a"
-]
-// Palavra 3 - REGISTRADORES
-var registradores = [
-    "r", "e", "g", "i", "s", "t", "r", "a", "d", "o", "r", "e", "s"
-]
-// Palavra 4 - RAM
-var ram = [
-    "r", "a", "m"
-]
-// Palavra 5 - ROM
-var rom = [
-    "r", "o", "m"
-]
-// Palavra 6 - EPROM
-var eprom = [
-    "e", "p", "r", "o", "m"
-]
-// Palavra 7 - FLASH
-var flash = [
-    "f", "l", "a", "s", "h"
-]
-// Palavra 8 - MEMORIA DE MASSA
-var memoriaDeMassa = [
-    "m", "e", "m", "o", "r", "i", "a", "d", "e", "m", "a", "s", "s", "a"
-]
-// Palavra 9 - DMA
-var dma = [
-    "d", "m", "a"
-]
-// Palavra 10 - CS
-var cs = [
-    "c", "s"
-]
-// Palavra 11 - ADRESS BUS
-var adressBus = [
-    "a", "d", "r", "e", "s", "s", "b", "u", "s"
-]
-// Palavra 12 - DATABUS
-var dataBus = [
-    "d", "a", "t", "a", "b", "u", "s"
-]
-// Palavra 13 - i5
-var i5 = [
-    "i", "5"
-]
-// Palavra 14 - i7
-var i7 = [
-    "i", "7"
-]
-// Palavra 15 - DUALCORE
-var dualcore = [
-    "d", "u", "a", "l", "c", "o", "r", "e"
-]
-// Palavra 16 -  QUADCORE
-var quadcore = [
-    "q", "u", "a", "d", "c", "o", "r", "e"
-]
-// Palavra 17 - THREADS
-var threads = [
-    "t", "h", "r", "e", "a", "d", "s"
-]
-// Palavra 18 - CACHE
-var cache = [
-    "c", "a", "c", "h", "e"
-]
-
-// ALFABETO
-// var alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    setInterval(() => {
+        cpuWord = inputCPULetra1.value + inputCPULetra2.value + inputCPULetra3.value;
+        ulaWord = inputULALetra1.value + inputULALetra2.value + inputULALetra3.value;
+        registradoresWord = inputREGISTRADORESLetra1.value + inputREGISTRADORESLetra2.value + inputREGISTRADORESLetra3.value + inputREGISTRADORESLetra4.value + inputREGISTRADORESLetra5.value + inputREGISTRADORESLetra6.value + inputREGISTRADORESLetra7.value + inputREGISTRADORESLetra8.value + inputREGISTRADORESLetra9.value + inputREGISTRADORESLetra10.value + inputREGISTRADORESLetra11.value + inputREGISTRADORESLetra12.value + inputREGISTRADORESLetra13.value;
+        ramWord = inputRAMLetra1.value + inputRAMLetra2.value + inputRAMLetra3.value;
+        romWord = inputROMLetra1.value + inputREGISTRADORESLetra10.value + inputROMLetra3.value;
+        epromWord = inputREGISTRADORESLetra12.value + inputEPROMLetra2.value + inputEPROMLetra3.value + inputEPROMLetra4.value + inputRAMLetra3.value;
+        flashWord = inputFLASHLetra1.value + inputULALetra2.value + inputFLASHLetra3.value + inputREGISTRADORESLetra5.value + inputFLASHLetra5.value;
+        memoriaDeMassaWord = inputMEMORIADEMASSALetra1.value + inputREGISTRADORESLetra2.value + inputMEMORIADEMASSALetra3.value + inputMEMORIADEMASSALetra4.value + inputMEMORIADEMASSALetra5.value + inputMEMORIADEMASSALetra6.value + inputMEMORIADEMASSALetra7.value + inputMEMORIADEMASSALetra8.value + inputMEMORIADEMASSALetra9.value + inputMEMORIADEMASSALetra10.value + inputMEMORIADEMASSALetra11.value + inputMEMORIADEMASSALetra12.value + inputMEMORIADEMASSALetra13.value + inputMEMORIADEMASSALetra14.value
+        dmaWord = inputDMALetra1.value + inputDMALetra2.value + inputDMALetra3.value;
+        csWord = inputCSLetra1.value + inputCSLetra2.value;
+        addressBusWord = inputREGISTRADORESLetra8.value + inputADDRESSBUSLetra2.value + inputADDRESSBUSLetra3.value + inputADDRESSBUSLetra4.value + inputADDRESSBUSLetra5.value + inputADDRESSBUSLetra6.value + inputADDRESSBUSLetra7.value + inputADDRESSBUSLetra8.value + inputCPULetra3.value + inputADDRESSBUSLetra10.value;
+        dataBusWord = inputMEMORIADEMASSALetra8.value + inputDATABUSLetra2.value + inputDATABUSLetra3.value + inputDATABUSLetra4.value + inputDATABUSLetra5.value + inputDATABUSLetra6.value + inputADDRESSBUSLetra7.value;
+        i5Word = inputREGISTRADORESLetra4.value + inputI5Letra2.value;
+        i7Word = inputMEMORIADEMASSALetra6.value + inputI7Letra2.value;
+        dualcoreWord = inputDUALCORELetra1.value + inputDUALCORELetra2.value + inputDUALCORELetra3.value + inputDUALCORELetra4.value + inputDUALCORELetra5.value + inputDUALCORELetra6.value + inputMEMORIADEMASSALetra5.value + inputDUALCORELetra8.value;
+        quadcoreWord = inputQUADCORELetra1.value + inputQUADCORELetra2.value + inputDMALetra3.value + inputQUADCORELetra4.value + inputCSLetra1.value + inputQUADCORELetra6.value + inputQUADCORELetra7.value + inputQUADCORELetra8.value;
+        threadsWord = inputDATABUSLetra3.value + inputTHREADSLetra2.value + inputTHREADSLetra3.value + inputTHREADSLetra4.value + inputTHREADSLetra5.value + inputTHREADSLetra6.value + inputTHREADSLetra7.value;
+        cacheWord = inputCACHELetra1.value + inputDUALCORELetra3.value + inputCACHELetra3.value + inputCACHELetra4.value + inputQUADCORELetra8.value;
 
 
-// VARIÁVEIS
-var palavra01 = [
-    "0", "1", "2"
-    /* inputCPULetra1.value.toLowerCase(), inputCPULetra2.value.toLowerCase(), inputCPULetra3.value.toLowerCase() */
-]
-
-
-// VALIDAÇÕES
-
-// if (palavra01.length == 3) {
-//     if (palavraLetra01 == cpu[0] && palavra01Letra2 == cpu[1] && palavra01Letra3 == cpu[2]) {
-//         verde
-//     } else {
-//         vermelho
-//     }
-// }
-
-setInterval(() => {
-    palavra01.splice(0, 1, inputCPULetra1.value.toLowerCase())
-    palavra01.splice(1, 1, inputCPULetra2.value.toLowerCase())
-    palavra01.splice(2, 1, inputCPULetra3.value.toLowerCase())
-
-
-    if (palavra01.length == 3) {
-
-        if (palavra01[0] == cpu[0] && palavra01[1] == cpu[1] && palavra01[2] == cpu[2]) {
-            /* document.getElementById(); */
-            /* var cpuLetra_c = document.querySelectorAll("#inputCPULetra1,#inputCPULetra2,#inputCPULetra3");
-            
-            cpuLetra_c.classList.add("verde"); */
-            // var cpu1 = undefined
-            var cpu1 = document.getElementsByClassName('inputLetra cpu');
-            for (var i = 0; i < cpu1.length; i++) {
-                cpu1[i].classList.add('verde');
-              }
-
-
-
-            // cpu1.classList.remove("inputLetra")
-            // cpu1.classList.add('verde')
-
-            console.log("verde")
-        } 
-        
-        else if (palavra01[0] == '' || palavra01[1] == '' || palavra01[2] == '') {
-            console.log("branco")
+        if (listaCruzadinha.indexOf(cpuWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('cpu')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove("vermelho");
+            }
+        } else if (cpuWord.length == 3) {
+            teste = document.getElementsByClassName('cpu')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.add('vermelho')
+            }
         }
-        
-        else {
-            console.log("vermelho")
-            // var teste = document.getElementById("palavra01");
-            // teste.classList.add("")
 
+        if (listaCruzadinha.indexOf(ulaWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('ula')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (ulaWord.length == 3) {
+            teste = document.getElementsByClassName('ula')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
         }
-    }
-}, 1000);
+
+        if (listaCruzadinha.indexOf(registradoresWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('registradores')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (registradoresWord.length == 13) {
+            teste = document.getElementsByClassName('registradores')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho');
+            }
+        }
+
+
+        if (listaCruzadinha.indexOf(ramWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('ram')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (ramWord.length == 3) {
+            teste = document.getElementsByClassName('ram')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(romWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('rom')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (romWord.length == 3) {
+            teste = document.getElementsByClassName('rom')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(epromWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('eprom')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (epromWord.length == 5) {
+            teste = document.getElementsByClassName('eprom')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(flashWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('flash')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (flashWord.length == 5) {
+            teste = document.getElementsByClassName('flash')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(memoriaDeMassaWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('memoriaDeMassa')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (memoriaDeMassaWord.length == 14) {
+            teste = document.getElementsByClassName('memoriaDeMassa')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(dmaWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('dma')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (dmaWord.length == 3) {
+            teste = document.getElementsByClassName('dma')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(csWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('cs')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (csWord.length == 2) {
+            teste = document.getElementsByClassName('cs')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(addressBusWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('addressBus')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (addressBusWord.length == 10) {
+            teste = document.getElementsByClassName('addressBus')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(dataBusWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('dataBus')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (dataBusWord.length == 7) {
+            teste = document.getElementsByClassName('dataBus')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(i5Word) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('i5')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (i5Word.length == 2) {
+            teste = document.getElementsByClassName('i5')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(i7Word) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('i7')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (i7Word.length == 2) {
+            teste = document.getElementsByClassName('i7')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(dualcoreWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('dualcore')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (dualcoreWord.length == 8) {
+            teste = document.getElementsByClassName('dualcore')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(quadcoreWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('quadcore')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (quadcoreWord.length == 8) {
+            teste = document.getElementsByClassName('quadcore')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(threadsWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('threads')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (threadsWord.length == 7) {
+            teste = document.getElementsByClassName('threads')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        if (listaCruzadinha.indexOf(cacheWord) > -1) {
+            console.log("correto")
+            teste = document.getElementsByClassName('cache')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('verde');
+                teste[i].classList.remove('vermelho');
+            }
+        } else if (cacheWord.length == 5) {
+            teste = document.getElementsByClassName('cache')
+            for (var i = 0; i < teste.length; i++) {
+                teste[i].classList.add('vermelho')
+            }
+        }
+
+        //     /* 
+        //         listaDasPalavras = [cpu, rom, ula]
+
+        //         var digitoUsuario = input.value      'c p u'
+
+        //         var auxiliar = listaDasPalavras.filter(word => word == listaDasPalavras[i])
+        //         auxiliar = cpu
+
+        //         digitoUsuario == listaDasPalavras.filter(digitoUsuario)
+
+        //         var cpuValidacao = listaDasPalavras.filter(word => word == "cpu");
+
+
+
+        //         var juncao = c + p + u
+        //         if (juncao = listaDasPalavras.indexOf(juncao) {
+        //             for (var posicaoDasWords = 0; posicaoDasWords < listaDasPalavras.length; posicaoDasWords++) {
+        //                 var existe = listaDasPalavras[posicaoDasWords].indexOf("");
+
+        //             }
+
+        //             listaDasPalavras[].indexOf()
+
+        //         }
+
+        //         if (c == 'c' && p == 'p' && u == 'u' || u == u && l == l && a == a) {
+        //             for (var palavrinha = indexOf(""); palavrinha < listaDasPalavras.length; palavrinha++) {
+        //                 var palavraAtual = listaDasPalavras[palavrinha];
+
+        //                 for (var letrinha = 0; letrinha < palavraAtual.length; letrinha++) {
+        //                     palavraAtual[letrinha].classList.add('verde');
+
+        //                 }
+        //                 palavrinha = 1
+        //                     p o r c o
+        //                 letrinha = 4
+        //                 palavras = [palavra1, palavra2, palavra3]
+        //             }
+
+        //             for (var i = 0; i <= palavras.length; i++) {
+        //                 for (var p1 = 0; p1 < palavras[i].length; p1++) {
+        //                     palavras[i][p1].classList.add('verde');
+        //                 }
+
+        //                 palavrinha[i][0].classList.add('verde');
+        //                 palavrinha[i][1].classList.add('verde');
+
+        //             }
+        //         }
+        //     } */
+
+
+    }, 1000);
