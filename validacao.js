@@ -77,8 +77,8 @@ var cache = [
 
 // VARIÁVEIS
 var palavra01 = [
-   "0","1","2"
-   /* inputCPULetra1.value.toLowerCase(), inputCPULetra2.value.toLowerCase(), inputCPULetra3.value.toLowerCase() */
+    "0", "1", "2"
+    /* inputCPULetra1.value.toLowerCase(), inputCPULetra2.value.toLowerCase(), inputCPULetra3.value.toLowerCase() */
 ]
 
 
@@ -99,16 +99,35 @@ setInterval(() => {
 
 
     if (palavra01.length == 3) {
-      
+
         if (palavra01[0] == cpu[0] && palavra01[1] == cpu[1] && palavra01[2] == cpu[2]) {
-         /* document.getElementById(); */
-         console.log("verde")
-         
-        } else if(palavra01[0] == '' && palavra01[1] == '' && palavra01[2] == '') {
+            /* document.getElementById(); */
+            /* var cpuLetra_c = document.querySelectorAll("#inputCPULetra1,#inputCPULetra2,#inputCPULetra3");
+            
+            cpuLetra_c.classList.add("verde"); */
+            // var cpu1 = undefined
+            var cpu1 = document.getElementsByClassName('inputLetra cpu');
+            for (var i = 0; i < cpu1.length; i++) {
+                cpu1[i].classList.add('verde');
+              }
+
+
+
+            // cpu1.classList.remove("inputLetra")
+            // cpu1.classList.add('verde')
+
+            console.log("verde")
+        } 
+        
+        else if (palavra01[0] == '' || palavra01[1] == '' || palavra01[2] == '') {
             console.log("branco")
-        } else {
-         console.log("vermelho")
+        }
+        
+        else {
+            console.log("vermelho")
+            // var teste = document.getElementById("palavra01");
+            // teste.classList.add("")
+
         }
     }
 }, 1000);
-   

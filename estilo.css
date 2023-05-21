@@ -37,8 +37,12 @@ body {
 }
 
 .verde {
-    border-color: rgb(13, 255, 13) solid;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border: rgb(13, 255, 13) solid 2px;
     background-color: rgb(139, 255, 139);
+    text-transform: uppercase;
 }
 
 .vermelho {
@@ -63,4 +67,22 @@ body {
     height: 100%;
     width: 100%;
     border: black solid 2px;
+    text-transform: uppercase;
+}
+
+.legenda {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+
 }
