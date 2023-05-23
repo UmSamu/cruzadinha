@@ -40,8 +40,7 @@ var teste =
         cacheWord = inputCACHELetra1.value + inputDUALCORELetra3.value + inputCACHELetra3.value + inputCACHELetra4.value + inputQUADCORELetra8.value;
 
 
-        if (listaCruzadinha.indexOf(cpuWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(cpuWord) > -1 && listaCruzadinha[0] == cpuWord) {
             teste = document.getElementsByClassName('cpu')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -55,8 +54,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(ulaWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(ulaWord) > -1 && listaCruzadinha[1] == ulaWord) {
             teste = document.getElementsByClassName('ula')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -69,8 +67,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(registradoresWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(registradoresWord) > -1 && listaCruzadinha[2] == registradoresWord) {
             teste = document.getElementsByClassName('registradores')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -84,8 +81,7 @@ var teste =
         }
 
 
-        if (listaCruzadinha.indexOf(ramWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(ramWord) > -1 && listaCruzadinha[3] == ramWord) {
             teste = document.getElementsByClassName('ram')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -98,8 +94,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(romWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(romWord) > -1 && listaCruzadinha[4] == romWord) {
             teste = document.getElementsByClassName('rom')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -112,8 +107,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(epromWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(epromWord) > -1 && listaCruzadinha[5] == epromWord) {
             teste = document.getElementsByClassName('eprom')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -126,8 +120,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(flashWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(flashWord) > -1 && listaCruzadinha[6] == flashWord) {
             teste = document.getElementsByClassName('flash')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -140,8 +133,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(memoriaDeMassaWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(memoriaDeMassaWord) > -1 && listaCruzadinha[7] == memoriaDeMassaWord) {
             teste = document.getElementsByClassName('memoriaDeMassa')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -154,8 +146,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(dmaWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(dmaWord) > -1 && listaCruzadinha[8] == dmaWord) {
             teste = document.getElementsByClassName('dma')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -168,8 +159,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(csWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(csWord) > -1 && listaCruzadinha[9] == csWord) {
             teste = document.getElementsByClassName('cs')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -182,8 +172,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(addressBusWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(addressBusWord) > -1 && listaCruzadinha[10] == addressBusWord) {
             teste = document.getElementsByClassName('addressBus')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -196,8 +185,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(dataBusWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(dataBusWord) > -1 && listaCruzadinha[11] == dataBusWord) {
             teste = document.getElementsByClassName('dataBus')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -210,8 +198,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(i5Word) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(i5Word) > -1 && listaCruzadinha[12] == i5Word) {
             teste = document.getElementsByClassName('i5')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -224,8 +211,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(i7Word) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(i7Word) > -1 && listaCruzadinha[13] == i7Word) {
             teste = document.getElementsByClassName('i7')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -238,8 +224,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(dualcoreWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(dualcoreWord) > -1 && listaCruzadinha[14] == dualcoreWord) {
             teste = document.getElementsByClassName('dualcore')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -252,8 +237,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(quadcoreWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(quadcoreWord) > -1 && listaCruzadinha[15] == quadcoreWord) {
             teste = document.getElementsByClassName('quadcore')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -266,8 +250,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(threadsWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(threadsWord) > -1 && listaCruzadinha[16] == threadsWord) {
             teste = document.getElementsByClassName('threads')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
@@ -280,8 +263,7 @@ var teste =
             }
         }
 
-        if (listaCruzadinha.indexOf(cacheWord) > -1) {
-            console.log("correto")
+        if (listaCruzadinha.indexOf(cacheWord) > -1 && listaCruzadinha[17] == cacheWord) {
             teste = document.getElementsByClassName('cache')
             for (var i = 0; i < teste.length; i++) {
                 teste[i].classList.add('verde');
