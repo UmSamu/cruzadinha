@@ -15,14 +15,24 @@ body {
     color: white;
 }
 
+.quadro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
 .coluna {
     display: flex;
     flex-direction: column;
+    width: fit-content;
 }
 
 .linha {
     display: flex;
     margin-top: 8px;
+    width: fit-content;
 }
 
 .quadradinho {
@@ -71,18 +81,15 @@ body {
 }
 
 .legenda {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
+    gap: 30px;
 }
 
-.esquerda {
+.bloco {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-.direita {
-    display: flex;
-    flex-direction: column;
-
-}
